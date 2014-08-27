@@ -5,6 +5,18 @@
 <body>
 <h1>Hello World</h1>
 <p>My first paragraph.</p>
+
+<button id="mybtn">click on this button to show current time</button>
+<script>
+document.getElementById("mybtn").onclick=function(){displayDate()};
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+
+</script>
+
+<p id="demo">  </p>
 <ul>
 <li><a href="bio.html"> Biography</a></li>
 </ul>
